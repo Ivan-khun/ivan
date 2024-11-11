@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+        .html {
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #080808;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            color: var(--white-color);
+        }
+
+        .navbar {
+            background-color: transparent;
+        }
+
+        .navbar a {
+            color: rgb(6, 6, 6) !important;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #ffcc00 !important;
+        }
+
+
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            background: url('https://videos.pexels.com/video-files/6602522/6602522-hd_1920_1080_30fps.mp4') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+        }
+
+
+        .hero-section video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+
+        .card-img-top {
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.05);
+
+        }
+
+
+        .card-body {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+
+        .card {
+            border: none;
+            margin-bottom: 20px;
+
+        }
+
+
+        .section-content .col-md-4 {
+            padding: 0;
+
+        }
+
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #6c757d;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+
+        .footer {
+            background-color: #0c0d0e;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #ffcc00;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: whitesmoke;
+            margin-bottom: 40px;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+
+        }
+
+        .video-section iframe:hover {
+            transform: scale(1.05);
+        }
+
+        .video-section .col-md-4 {
+            padding: 0;
+        }
+
+
+
+        .section-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">NihonTrails</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#things-to-do">Things to Do</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plan-your-trip">Plan Your Trip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#articles">Articles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section (Video Background) -->
+    <section class="hero-section">
+        <!-- Video Background -->
+        <video autoplay muted loop>
+            <source src="https://videos.pexels.com/video-files/6602522/6602522-hd_1920_1080_30fps.mp4" type="video/mp4">
+        </video>
+        <h1>Travel Beyond the Ordinary in Japan</h1>
+    </section>
+
+    <!-- Video Section -->
+    <div class="container my-5 video-section">
+        <h2 class="text-center mb-4">Travel Videos</h2>
+        <div class="row justify-content-center">
+            <!-- First Video -->
+            <div class="col-md-6 mb-4">
+                <iframe src="https://www.youtube.com/embed/0wEwhMGyXTY" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- Second Video -->
+            <div class="col-md-6 mb-4">
+                <iframe src="https://www.youtube.com/embed/fXW54T4wpGM" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- Third Video -->
+            <div class="col-md-6 mb-4">
+                <iframe src="https://www.youtube.com/embed/NQ6_Sqt_w3Y" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Destinations -->
+    <div id="destinations" class="container my-5 section-content">
+        <h2 class="section-title">Destinations</h2>
+        <p class="section-description">Japan is a land of breathtaking contrasts, where ancient traditions blend
+            seamlessly with cutting-edge modernity. From the towering skyscrapers of Tokyo to the tranquil temples of
+            Kyoto, Japan offers an unparalleled travel experience for every kind of explorer. Whether youre seeking the
+            hustle and bustle of urban life, the serenity of nature, or the mystique of ancient culture, Japan has it
+            all.</p>
+        <div class="row justify-content-center">
+            <!-- First Destination Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img  src="https://media.tacdn.com/media/attractions-splice-spp-674x446/11/f8/e7/85.jpg" class="card-img-top" alt="Mount fuji">
+                    <div class="card-body">
+                        <h5 class="card-title">Mount Fuji (Fuji-san)</h5>
+                        <p class="card-text">Mount Fuji is Japans most iconic natural landmark, and it holds
+                            significant cultural and spiritual importance. As the highest peak in Japan (3,776 meters),
+                            it is a popular destination for outdoor enthusiasts and those seeking spiritual renewal.
+                            Climbers tackle the mountain during the summer months, while in the winter, the surrounding
+                            area offers beautiful views and tranquil nature walks. The iconic symmetrical shape of Mount
+                            Fuji, often snow-capped in winter.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Destination Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.sommertage.com/wp-content/uploads/2019/10/Hakone-Tipps.jpg" class="card-img-top" alt="Hakone National Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Hakone National Park</h5>
+                        <p class="card-text">Located near Mount Fuji, Hakone is renowned for its hot springs (onsen),
+                            breathtaking views, and tranquil natural beauty. The area is part of the Fuji-Hakone-Izu
+                            National Park and offers a variety of outdoor experiences, from scenic lake cruises on Lake
+                            Ashi to hiking in the surrounding mountains. Hakone is also famous for its historic hot
+                            spring resorts and its ability to offer a peaceful escape from the urban sprawl of Tokyo,
+                            which is just a short train ride away.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Destination Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/5a/b7.jpg" class="card-img-top" alt="Nikko National Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Nikko National Park</h5>
+                        <p class="card-text">Situated in the mountains north of Tokyo, Nikko National Park is a UNESCO
+                            World Heritage site that combines stunning natural beauty with rich cultural history. The
+                            park is famous for its sacred Shinto and Buddhist shrines, but it is also home to
+                            spectacular waterfalls, lush forests, and hiking trails. Nikko dramatic landscapes are
+                            particularly striking in autumn when the foliage turns brilliant shades of red and orange,
+                            making it a favorite destination for lover photographers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Things to Do -->
+    <div id="things-to-do" class="container my-5 section-content">
+        <h2 class="section-title">Things to Do</h2>
+        <p class="section-description">Japan offers an incredible variety of activities that span from deeply
+            traditional cultural experiences to cutting-edge modern attractions. Here’s a detailed description of some
+            of the best things to do in Japan, providing a comprehensive look at what makes the country so unique and
+            fascinating to explore:</p>
+        <div class="row justify-content-center">
+            <!-- First Activity Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/07/1c/c4/16.jpg" class="card-img-top" alt="Hiking">
+                    <div class="card-body">
+                        <h5 class="card-title">Hiking </h5>
+                        <p class="card-text">Hiking to the summit (for experienced climbers), exploring the Fuji Five
+                            Lakes region, and visiting the Chureito Pagoda for stunning panoramic views of the mountain.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Activity Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://blog.sakura.co/wp-content/uploads/2021/12/shutterstock_1398672518-1.jpg" class="card-img-top" alt="Soaking in the natural hot springs">
+                    <div class="card-body">
+                        <h5 class="card-title">Soaking in the natural hot springs</h5>
+                        <p class="card-text">Soaking in the natural hot springs, enjoying boat cruises on Lake Ashi with
+                            views of Mount Fuji, visiting the Hakone Open-Air Museum, and hiking in the lush hills
+                            around the area.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Activity Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/a9/90.jpg" class="card-img-top"
+                        alt="Visiting the UNESCO-listed Toshogu Shrine">
+                    <div class="card-body">
+                        <h5 class="card-title"> Visiting the UNESCO-listed Toshogu Shrine,</h5>
+                        <p class="card-text">Visiting the UNESCO-listed Toshogu Shrine, exploring the famous Kegon
+                            Falls, hiking in the surrounding mountains, and enjoying the hot springs in the area and
+                            sure u will enjoy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Plan Your Trip -->
+    <div id="plan-your-trip" class="container my-5 section-content">
+        <h2 class="section-title">Plan Your Trip</h2>
+        <p class="section-description">Planning your perfect getaway has never been easier! Find tips, tools, and
+            resources to help you book flights, accommodations, and activities.</p>
+        <div class="row justify-content-center">
+            <!-- First Planning Tip Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.detourista.com/wp/wp-content/uploads/Unorganized/003-Marcos-with-Mount-Fuji-view-at-Oishi-Park-in-Lake-Kawaguchi-Yamanashi-Japan-Kawaguchi-ko-Japan-181212-153719.jpg" class="card-img-top" alt="Budgeting">
+                    <div class="card-body">
+                        <h5 class="card-title">Budget & Plan for Mount Fuji (3 Days)</h5>
+                        <p class="card-text">Budget: Allocate about ¥15,000–¥20,000 per day (approx. $100–$150).
+                            Accommodation: Stay in affordable guesthouses near Lake Kawaguchi or budget ryokan options.
+                            Transport: Use JR Pass or regional buses to reach the area. The Fujisan View Express is a
+                            great option for day trips.
+                            Eating: Try Hoto noodles (a local dish) and enjoy meals at budget-friendly eateries near the
+                            lake.
+                            Before You Go: Bring comfortable hiking gear if climbing, and check weather conditions
+                            (summer is best for summiting). Pack sunscreen and snacks for hiking. Ensure your phone has
+                            a translation app for convenience because they have sometime that u cant be know something
+                            in there.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Planning Tip Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://tiptoeingworld.com/wp-content/uploads/2016/02/Fuji-Yama-Kawaguchiko-e1454482301916.jpg" class="card-img-top" alt="Itinerary">
+                    <div class="card-body">
+                        <h5 class="card-title">Budget & Plan for Hakone National Park (2 Days)</h5>
+                        <p class="card-text">Budget: Expect to spend around ¥12,000–¥18,000 daily (approx. $85–$130).
+                            Accommodation: Look for affordable hotels or traditional ryokans with onsens for a
+                            traditional experience.
+                            Transport: Use the Hakone Free Pass for unlimited travel on buses, trains, and cable cars
+                            within the park area.
+                            Eating: Try katsu don (breaded pork rice bowl) or shabu-shabu at local eateries. Budget
+                            restaurants and convenience stores also offer affordable meals.
+                            Before You Go: Bring comfortable shoes for walking and exploring. Pack a light jacket, as
+                            weather can change quickly, especially near the ropeway and mountains.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Planning Tip Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScXAaWq92RF2r35Qwvxbn0oT9gMb_1V0NM9g&s" class="card-img-top" alt="Packing">
+                    <div class="card-body">
+                        <h5 class="card-title">Budget & Plan for Nikko National Park (2 Days)</h5>
+                        <p class="card-text">Budget: Estimate around ¥10,000,¥15,000 per day (approx. $70–$100).
+                            Accommodation: Stay in affordable guesthouses or budget hotels in Nikko city center.
+                            Transport: Take a JR Pass for affordable train rides to Nikko or use the Nikko All Area Pass
+                            for local transportation.
+                            Eating: Opt for local favorites like yuba (tofu skin) or soba noodles at local restaurants.
+                            Convenience stores also provide quick, inexpensive meals.
+                            Before You Go: Bring comfortable walking shoes for temple visits and hikes. Check temple and
+                            shrine hours, as some may close early. Bring a power bank for phone usage in remote areas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section: Articles -->
+    <div id="articles" class="container my-5 section-content">
+        <h2 class="section-title">Articles</h2>
+        <p class="section-description">Read our expert travel articles, offering tips, recommendations, and destination
+            guides for every type of traveler.</p>
+        <div class="row justify-content-center">
+            <!-- First Article Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.detourista.com/wp/wp-content/uploads/Unorganized/011-Owakudani-sulfur-mine-in-Hakone-Japan-Hakone-Japan-181214-113335.jpg" class="card-img-top"
+                        alt="Travel Guide">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ultimate Travel Guide to Japan: Top Destinations, Culture, and Tips
+                        </h5>
+                        <p class="card-text">Japan is a fascinating blend of ancient tradition and cutting-edge
+                            technology, with a wealth of diverse attractions ranging from tranquil temples to bustling
+                            cities. This comprehensive travel guide will provide readers with everything they need to
+                            know for an unforgettable trip to Japan.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Article Card -->
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://i1.wp.com/www.vivomigsgee.com/wp-content/uploads/2020/01/Mount_Fuji_Classic_Tour_Maple-Corridor_Matcha_Experience_and_Must-visit_Gotemba_Premium_Outlets-22.png?fit=720%2C540&ssl=1" class="card-img-top"
+                        alt="Packing List">
+                    <div class="card-body">
+                        <h5 class="card-title">Essential Packing List for Your Trip to Japan: What to Bring and Why</h5>
+                        <p class="card-text">Packing for a trip to Japan can be overwhelming due to the country's
+                            diverse weather, culture, and activities. This packing list will break down everything you
+                            need to bring, from clothing to accessories, so you can have an enjoyable, comfortable, and
+                            practical experience while traveling through Japan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Travel Website | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+    </footer>
+
+    <!-- Bootstrap JS (via CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
